@@ -3,7 +3,7 @@ import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/nextjs';
 import { Box } from '@mui/material';
 import { HeaderStyles } from './HeaderStyles';
 
-function Header() {
+const Header = () => {
   return (
     <Box >
       <Box sx={HeaderStyles}>
@@ -16,6 +16,6 @@ function Header() {
       </Box>
     </Box>
   );
-}
+};
 
 export default Header;
