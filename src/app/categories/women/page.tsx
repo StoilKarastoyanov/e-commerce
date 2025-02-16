@@ -1,7 +1,13 @@
+import { CardProps } from "@/src/components/types";
 import Articles from "../../Articles";
+import { getData } from "@/src/helpers/file-helpers";
 
-export default function Women() {
+const Women = async () => {
+    const data: CardProps[] = await getData("women");
+
     return (
-        <Articles category="women" />
+        <Articles data={data} />
     );
-}
+};
+
+export default Women;

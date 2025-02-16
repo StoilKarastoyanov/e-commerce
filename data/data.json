@@ -1,0 +1,296 @@
+[
+    {
+        "id": 1,
+        "category": "women",
+        "title": "Ribbed tank top",
+        "price": "$ 20.00",
+        "image": "/img/women1.jpg"
+    },
+    {
+        "id": 2,
+        "category": "women",
+        "title": "Jersey blouse with collar",
+        "price": "$ 30.00",
+        "image": "/img/women2.jpg"
+    },
+    {
+        "id": 3,
+        "category": "women",
+        "title": "Body T-shirt",
+        "price": "$ 25.00",
+        "image": "/img/women3.jpg"
+    },
+    {
+        "id": 4,
+        "category": "women",
+        "title": "Ribbed tank top",
+        "price": "$ 20.00",
+        "image": "/img/women1.jpg"
+    },
+    {
+        "id": 5,
+        "category": "women",
+        "title": "Jersey blouse with collar",
+        "price": "$ 30.00",
+        "image": "/img/women2.jpg"
+    },
+    {
+        "id": 6,
+        "category": "women",
+        "title": "Body T-shirt",
+        "price": "$ 25.00",
+        "image": "/img/women3.jpg"
+    },
+    {
+        "id": 7,
+        "category": "women",
+        "title": "Ribbed tank top",
+        "price": "$ 20.00",
+        "image": "/img/women1.jpg"
+    },
+    {
+        "id": 8,
+        "category": "women",
+        "title": "Jersey blouse with collar",
+        "price": "$ 30.00",
+        "image": "/img/women2.jpg"
+    },
+    {
+        "id": 9,
+        "category": "women",
+        "title": "Body T-shirt",
+        "price": "$ 25.00",
+        "image": "/img/women3.jpg"
+    },
+    {
+        "id": 10,
+        "category": "women",
+        "title": "Ribbed tank top",
+        "price": "$ 20.00",
+        "image": "/img/women1.jpg"
+    },
+    {
+        "id": 11,
+        "category": "women",
+        "title": "Jersey blouse with collar",
+        "price": "$ 30.00",
+        "image": "/img/women2.jpg"
+    },
+    {
+        "id": 12,
+        "category": "women",
+        "title": "Body T-shirt",
+        "price": "$ 25.00",
+        "image": "/img/women3.jpg"
+    },
+    {
+        "id": 13,
+        "category": "men",
+        "title": "Loose Fit Long Sleeve Sports Blouse",
+        "price": "$ 20.00",
+        "image": "/img/men1.jpg"
+    },
+    {
+        "id": 14,
+        "category": "men",
+        "title": "Relaxed Fit Poplin Trousers",
+        "price": "$ 17.50",
+        "image": "/img/men2.jpg"
+    },
+    {
+        "id": 15,
+        "category": "men",
+        "title": "Oversized Fit T-Shirt",
+        "price": "$ 18.00",
+        "image": "/img/men3.jpg"
+    },
+    {
+        "id": 16,
+        "category": "men",
+        "title": "Loose Fit Long Sleeve Sports Blouse",
+        "price": "$ 20.00",
+        "image": "/img/men1.jpg"
+    },
+    {
+        "id": 17,
+        "category": "men",
+        "title": "Relaxed Fit Poplin Trousers",
+        "price": "$ 17.50",
+        "image": "/img/men2.jpg"
+    },
+    {
+        "id": 18,
+        "category": "men",
+        "title": "Oversized Fit T-Shirt",
+        "price": "$ 18.00",
+        "image": "/img/men3.jpg"
+    },
+    {
+        "id": 19,
+        "category": "men",
+        "title": "Loose Fit Long Sleeve Sports Blouse",
+        "price": "$ 20.00",
+        "image": "/img/men1.jpg"
+    },
+    {
+        "id": 20,
+        "category": "men",
+        "title": "Relaxed Fit Poplin Trousers",
+        "price": "$ 17.50",
+        "image": "/img/men2.jpg"
+    },
+    {
+        "id": 21,
+        "category": "men",
+        "title": "Oversized Fit T-Shirt",
+        "price": "$ 18.00",
+        "image": "/img/men3.jpg"
+    },
+    {
+        "id": 22,
+        "category": "men",
+        "title": "Loose Fit Long Sleeve Sports Blouse",
+        "price": "$ 20.00",
+        "image": "/img/men1.jpg"
+    },
+    {
+        "id": 23,
+        "category": "men",
+        "title": "Relaxed Fit Poplin Trousers",
+        "price": "$ 17.50",
+        "image": "/img/men2.jpg"
+    },
+    {
+        "id": 24,
+        "category": "men",
+        "title": "Oversized Fit T-Shirt",
+        "price": "$ 18.00",
+        "image": "/img/men3.jpg"
+    },
+    {
+        "id": 25,
+        "category": "children",
+        "title": "Quilted water-repellent jacket",
+        "price": "$ 20.00",
+        "image": "/img/children1.jpg"
+    },
+    {
+        "id": 26,
+        "category": "children",
+        "title": "Waterproof winter jumpsuit with room to grow",
+        "price": "$ 55.00",
+        "image": "/img/children2.jpg"
+    },
+    {
+        "id": 27,
+        "category": "children",
+        "title": "Double-breasted trenchcoat",
+        "price": "$ 31.00",
+        "image": "/img/children3.jpg"
+    },
+    {
+        "id": 28,
+        "category": "children",
+        "title": "Quilted water-repellent jacket",
+        "price": "$ 20.00",
+        "image": "/img/children1.jpg"
+    },
+    {
+        "id": 29,
+        "category": "children",
+        "title": "Waterproof winter jumpsuit with room to grow",
+        "price": "$ 55.00",
+        "image": "/img/children2.jpg"
+    },
+    {
+        "id": 30,
+        "category": "children",
+        "title": "Double-breasted trenchcoat",
+        "price": "$ 31.00",
+        "image": "/img/children3.jpg"
+    },
+    {
+        "id": 31,
+        "category": "children",
+        "title": "Quilted water-repellent jacket",
+        "price": "$ 20.00",
+        "image": "/img/children1.jpg"
+    },
+    {
+        "id": 32,
+        "category": "children",
+        "title": "Waterproof winter jumpsuit with room to grow",
+        "price": "$ 55.00",
+        "image": "/img/children2.jpg"
+    },
+    {
+        "id": 33,
+        "category": "children",
+        "title": "Double-breasted trenchcoat",
+        "price": "$ 31.00",
+        "image": "/img/children3.jpg"
+    },
+    {
+        "id": 34,
+        "category": "children",
+        "title": "Quilted water-repellent jacket",
+        "price": "$ 20.00",
+        "image": "/img/children1.jpg"
+    },
+    {
+        "id": 35,
+        "category": "children",
+        "title": "Waterproof winter jumpsuit with room to grow",
+        "price": "$ 55.00",
+        "image": "/img/children2.jpg"
+    },
+    {
+        "id": 36,
+        "category": "children",
+        "title": "Double-breasted trenchcoat",
+        "price": "$ 31.00",
+        "image": "/img/children3.jpg"
+    },
+    {
+        "id": 37,
+        "category": "children",
+        "title": "Quilted water-repellent jacket",
+        "price": "$ 20.00",
+        "image": "/img/children1.jpg"
+    },
+    {
+        "id": 38,
+        "category": "children",
+        "title": "Waterproof winter jumpsuit with room to grow",
+        "price": "$ 55.00",
+        "image": "/img/children2.jpg"
+    },
+    {
+        "id": 39,
+        "category": "children",
+        "title": "Double-breasted trenchcoat",
+        "price": "$ 31.00",
+        "image": "/img/children3.jpg"
+    },
+    {
+        "id": 40,
+        "category": "children",
+        "title": "Quilted water-repellent jacket",
+        "price": "$ 20.00",
+        "image": "/img/children1.jpg"
+    },
+    {
+        "id": 41,
+        "category": "children",
+        "title": "Waterproof winter jumpsuit with room to grow",
+        "price": "$ 55.00",
+        "image": "/img/children2.jpg"
+    },
+    {
+        "id": 42,
+        "category": "children",
+        "title": "Double-breasted trenchcoat",
+        "price": "$ 31.00",
+        "image": "/img/children3.jpg"
+    }
+]

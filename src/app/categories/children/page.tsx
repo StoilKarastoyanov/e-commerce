@@ -1,7 +1,13 @@
+import { CardProps } from "@/src/components/types";
 import Articles from "../../Articles";
+import { getData } from "@/src/helpers/file-helpers";
 
-export default function Children() {
+const Children = async () => {
+    const data: CardProps[] = await getData("children");
+
     return (
-        <Articles category="children" />
+        <Articles data={data} />
     );
-}
+};
+
+export default Children;

@@ -4,7 +4,7 @@ export interface DropdownOptions {
 }
 
 export interface CardProps {
-    id?: string;
+    id: string;
     title: string;
     price: string;
     image: string;

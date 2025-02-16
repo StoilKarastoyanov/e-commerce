@@ -1,15 +1,14 @@
-import { getData } from "@/src/helpers/file-helpers";
+'use client';
 import ProductCard from "@/src/components/ProductCard";
-import { CardProps, CategoryType } from "@/src/components/types";
+import { CardProps } from "@/src/components/types";
 import styles from "./page.module.css";
 
 interface ArticlesProps {
-    category: CategoryType;
+    data: CardProps[];
 }
 
-const Artucles = ({ category }: ArticlesProps) => {
-    const data = getData(category);
-    if (!data) {
+const Articles = ({ data }: ArticlesProps) => {
+    if (!data || data.length === 0) {
         return <div>No results found...</div>;
     }
 
@@ -19,6 +18,7 @@ const Artucles = ({ category }: ArticlesProps) => {
                 {data.map(({ id, title, price, image }: CardProps) => (
                     <ProductCard
                         key={id}
+                        id={id}
                         title={title}
                         price={price}
                         image={image}
@@ -29,4 +29,4 @@ const Artucles = ({ category }: ArticlesProps) => {
     );
 };
 
-export default Artucles;
+export default Articles;
