@@ -35,6 +35,15 @@
   grid-row-start: 2;
 }
 
+.row {
+  display: flex;
+  flex-flow: row wrap;
+
+  gap: 16px;
+  grid-row-start: 2;
+
+}
+
 .main ol {
   font-family: var(--font-geist-mono);
   padding-left: 0;

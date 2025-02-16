@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "title": "Women in Tech",
+        "price": "$ 20.00",
+        "image": "/img/women1.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Jersey blouse with collar",
+        "price": "$ 30.00",
+        "image": "/img/women2.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Body T-shirt",
+        "price": "$ 25.00",
+        "image": "/img/women3.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Women in Tech",
+        "price": "$ 20.00",
+        "image": "/img/women1.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Jersey blouse with collar",
+        "price": "$ 30.00",
+        "image": "/img/women2.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Body T-shirt",
+        "price": "$ 25.00",
+        "image": "/img/women3.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Women in Tech",
+        "price": "$ 20.00",
+        "image": "/img/women1.jpg"
+    },
+    {
+        "id": 8,
+        "title": "Jersey blouse with collar",
+        "price": "$ 30.00",
+        "image": "/img/women2.jpg"
+    },
+    {
+        "id": 9,
+        "title": "Body T-shirt",
+        "price": "$ 25.00",
+        "image": "/img/women3.jpg"
+    },
+    {
+        "id": 10,
+        "title": "Women in Tech",
+        "price": "$ 20.00",
+        "image": "/img/women1.jpg"
+    },
+    {
+        "id": 11,
+        "title": "Jersey blouse with collar",
+        "price": "$ 30.00",
+        "image": "/img/women2.jpg"
+    },
+    {
+        "id": 12,
+        "title": "Body T-shirt",
+        "price": "$ 25.00",
+        "image": "/img/women3.jpg"
+    }
+]

@@ -1,9 +1,9 @@
 export const HeaderStyles = {
     display: 'flex',
-    justifyContent: 'flex-end',
-    alignItems: 'flex-start',
+    justifyContent: 'space-between',
+    alignItems: 'center',
     paddingX: 2,
-    py: 2,
+    height: '4rem',
     background: 'linear-gradient(to bottom, lightgray, transparent)',
     flexShrink: 0,
 };

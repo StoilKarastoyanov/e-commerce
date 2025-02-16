@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "title": "Loose Fit Long Sleeve Sports Blouse",
+        "price": "$ 20.00",
+        "image": "/img/men1.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Relaxed Fit Poplin Trousers",
+        "price": "$ 17.50",
+        "image": "/img/men2.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Oversized Fit T-Shirt",
+        "price": "$ 18.00",
+        "image": "/img/men3.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Loose Fit Long Sleeve Sports Blouse",
+        "price": "$ 20.00",
+        "image": "/img/men1.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Relaxed Fit Poplin Trousers",
+        "price": "$ 17.50",
+        "image": "/img/men2.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Oversized Fit T-Shirt",
+        "price": "$ 18.00",
+        "image": "/img/men3.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Loose Fit Long Sleeve Sports Blouse",
+        "price": "$ 20.00",
+        "image": "/img/men1.jpg"
+    },
+    {
+        "id": 8,
+        "title": "Relaxed Fit Poplin Trousers",
+        "price": "$ 17.50",
+        "image": "/img/men2.jpg"
+    },
+    {
+        "id": 9,
+        "title": "Oversized Fit T-Shirt",
+        "price": "$ 18.00",
+        "image": "/img/men3.jpg"
+    },
+    {
+        "id": 10,
+        "title": "Loose Fit Long Sleeve Sports Blouse",
+        "price": "$ 20.00",
+        "image": "/img/men1.jpg"
+    },
+    {
+        "id": 11,
+        "title": "Relaxed Fit Poplin Trousers",
+        "price": "$ 17.50",
+        "image": "/img/men2.jpg"
+    },
+    {
+        "id": 12,
+        "title": "Oversized Fit T-Shirt",
+        "price": "$ 18.00",
+        "image": "/img/men3.jpg"
+    }
+]
