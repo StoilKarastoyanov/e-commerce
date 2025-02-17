@@ -3,10 +3,11 @@ export interface DropdownOptions {
     options: string[];
 }
 
-export interface CardProps {
+export interface Product {
     id: string;
     title: string;
     price: string;
+    size: string[];
     image: string;
 }
 

@@ -8,17 +8,18 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import CardActionArea from '@mui/material/CardActionArea';
 import CardActions from '@mui/material/CardActions';
-import { CardProps } from '../types';
+import { Product } from '../types';
 import { useRouter } from 'next/navigation';
 import { setSelectedProductId, setReviwedProductIds } from '@/src/redux/product/slice';
 
-const ProductCard = ({ id, title, price, image }: CardProps) => {
+const ProductCard = (item: Product) => {
   const dispatch = useDispatch();
   const router = useRouter();
+  const { id, title, price, size, image } = item;
 
   const handleClick = () => {
-    dispatch(setSelectedProductId(id));
-    dispatch(setReviwedProductIds(id));
+    dispatch(setSelectedProductId(item));
+    dispatch(setReviwedProductIds(item));
     router.push(`/product/${id}-${title.replace(/\s+/g, '-')}`);
   };
 
@@ -33,6 +34,9 @@ const ProductCard = ({ id, title, price, image }: CardProps) => {
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             {title}
+          </Typography>
+          <Typography gutterBottom variant="body2" component="div" color={size?.length ? 'text.primary' : 'error'}>
+            {size?.join(', ') || "out of stock"}
           </Typography>
           <Typography variant="body2" sx={{ color: 'text.secondary' }}>
             {price}

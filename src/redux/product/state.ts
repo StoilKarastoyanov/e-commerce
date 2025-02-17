@@ -1,4 +1,11 @@
+import { Product } from "@/src/components/types";
+
 export default interface ProductState {
-    selectedProductId?: string;
-    reviewedProductIds: string[];
+    selectedProduct?: Product;
+    reviewedProducts: Product[];
 }
+
+export const initialProductState: ProductState = {
+    selectedProduct: undefined,
+    reviewedProducts: [],
+};

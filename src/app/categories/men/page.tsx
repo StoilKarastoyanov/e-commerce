@@ -1,9 +1,9 @@
-import { CardProps } from "@/src/components/types";
-import Articles from "../../Articles";
+import { Product } from "@/src/components/types";
+import Articles from "../../../components/Articles/Articles";
 import { getData } from "@/src/helpers/file-helpers";
 
 const Men = async () => {
-    const data: CardProps[] = await getData("men");
+    const data: Product[] = await getData("men");
 
     return (
         <Articles data={data} />

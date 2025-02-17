@@ -1,20 +1,16 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import ProductState from "./state";
-
-const initialProductState: ProductState = {
-    selectedProductId: undefined,
-    reviewedProductIds: [],
-};
+import ProductState, { initialProductState } from "./state";
+import { Product } from "@/src/components/types";
 
 const ProductSlice = createSlice({
     name: 'product',
     initialState: initialProductState,
     reducers: {
-        setSelectedProductId: (state: ProductState, action: PayloadAction<string>) => {
-            state.selectedProductId = action.payload;
+        setSelectedProductId: (state: ProductState, action: PayloadAction<Product>) => {
+            state.selectedProduct = action.payload;
         },
-        setReviwedProductIds: (state: ProductState, action: PayloadAction<string>) => {
-            state.reviewedProductIds.push(action.payload);
+        setReviwedProductIds: (state: ProductState, action: PayloadAction<Product>) => {
+            state.reviewedProducts.push(action.payload);
         }
     },
 });

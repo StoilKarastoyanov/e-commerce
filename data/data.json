@@ -4,6 +4,12 @@
         "category": "women",
         "title": "Ribbed tank top",
         "price": "$ 20.00",
+        "size": [
+            "SX",
+            "S",
+            "M",
+            "L"
+        ],
         "image": "/img/women1.jpg"
     },
     {
@@ -11,6 +17,11 @@
         "category": "women",
         "title": "Jersey blouse with collar",
         "price": "$ 30.00",
+        "size": [
+            "SX",
+            "M",
+            "L"
+        ],
         "image": "/img/women2.jpg"
     },
     {
@@ -18,6 +29,12 @@
         "category": "women",
         "title": "Body T-shirt",
         "price": "$ 25.00",
+        "size": [
+            "SX",
+            "S",
+            "M",
+            "L"
+        ],
         "image": "/img/women3.jpg"
     },
     {
@@ -109,6 +126,12 @@
         "category": "men",
         "title": "Loose Fit Long Sleeve Sports Blouse",
         "price": "$ 20.00",
+        "size": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
         "image": "/img/men1.jpg"
     },
     {
@@ -116,6 +139,12 @@
         "category": "men",
         "title": "Relaxed Fit Poplin Trousers",
         "price": "$ 17.50",
+        "size": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
         "image": "/img/men2.jpg"
     },
     {
@@ -123,6 +152,11 @@
         "category": "men",
         "title": "Oversized Fit T-Shirt",
         "price": "$ 18.00",
+        "size": [
+            "L",
+            "XL",
+            "XXL"
+        ],
         "image": "/img/men3.jpg"
     },
     {
@@ -172,6 +206,11 @@
         "category": "children",
         "title": "Quilted water-repellent jacket",
         "price": "$ 20.00",
+        "size": [
+            "S",
+            "M",
+            "L"
+        ],
         "image": "/img/children1.jpg"
     },
     {
@@ -179,6 +218,10 @@
         "category": "children",
         "title": "Waterproof winter jumpsuit with room to grow",
         "price": "$ 55.00",
+        "size": [
+            "S",
+            "M"
+        ],
         "image": "/img/children2.jpg"
     },
     {
@@ -186,6 +229,10 @@
         "category": "children",
         "title": "Double-breasted trenchcoat",
         "price": "$ 31.00",
+        "size": [
+            "S",
+            "L"
+        ],
         "image": "/img/children3.jpg"
     },
     {
