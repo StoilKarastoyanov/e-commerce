@@ -18,7 +18,7 @@ const ShoppingCart = () => {
     <Box>
       <Button color='inherit'>
         <ShoppingCartIcon fontSize="large" />
-        {cartItems.length && <Badge badgeContent={cartItems.length} color="info" overlap="circular" />}
+        {cartItems.length > 0 && <Badge badgeContent={cartItems.length} color="info" overlap="circular" />}
       </Button>
       {cartItems.length > 0 && <Button color='error' onClick={handleClearCart}>
         clear

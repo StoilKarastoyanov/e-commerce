@@ -11,4 +11,8 @@ export interface Product {
     image: string;
 }
 
+export interface CartItem extends Product {
+    quantity: number;
+}
+
 export type CategoryType = 'women' | 'men' | 'children';

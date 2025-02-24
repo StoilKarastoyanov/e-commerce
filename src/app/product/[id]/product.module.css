@@ -1,5 +1,5 @@
 .img {
-    height: min-content;
+    display: flex;
     max-width: 50%;
-    object-fit: cover;
+    flex-grow: 1;
 }

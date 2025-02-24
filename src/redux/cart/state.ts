@@ -1,7 +1,7 @@
-import { Product } from "@/src/components/types";
+import { CartItem } from "@/src/components/types";
 
 export interface CartState {
-    cartItems: Product[];
+    cartItems: CartItem[];
 }
 
 export const initialCartState: CartState = {

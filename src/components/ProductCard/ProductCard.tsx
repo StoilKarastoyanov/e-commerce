@@ -1,6 +1,6 @@
 'use client';
 import * as React from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -11,15 +11,21 @@ import CardActions from '@mui/material/CardActions';
 import { Product } from '../types';
 import { useRouter } from 'next/navigation';
 import { setSelectedProductId, setReviwedProductIds } from '@/src/redux/product/slice';
+import { selectRecentlyViewedItems } from '@/src/redux/product/selectors';
 
 const ProductCard = (item: Product) => {
   const dispatch = useDispatch();
   const router = useRouter();
+  const reviwedItems = useSelector(selectRecentlyViewedItems);
   const { id, title, price, size, image } = item;
 
   const handleClick = () => {
     dispatch(setSelectedProductId(item));
-    dispatch(setReviwedProductIds(item));
+
+    if (!reviwedItems.some((reviewedItem) => reviewedItem.id === item.id)) {
+      dispatch(setReviwedProductIds(item));
+    }
+
     router.push(`/product/${id}-${title.replace(/\s+/g, '-')}`);
   };
 
