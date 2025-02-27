@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Box, ImageList, ImageListItem } from "@mui/material";
+import Image from "next/image";
 
 const Main = () => {
   const images = ["/img/women1.jpg", "/img/women3.jpg", "/img/women2.jpg"];
@@ -27,11 +28,19 @@ const Main = () => {
       >
         {images.map((item) => (
           <ImageListItem key={item}>
-            <img
+            <Image
+              src={item}
+              alt="beautiful woman"
+              width={300} // Set a proper width
+              height={400} // Set a proper height
+              style={{ objectFit: "cover" }} // Ensures correct aspect ratio
+              priority={true} // Improve LCP (optional)
+            />
+            {/* <img
               src={item}
               alt="beautiful woman"
               loading="lazy"
-            />
+            /> */}
           </ImageListItem>
         ))}
       </ImageList>

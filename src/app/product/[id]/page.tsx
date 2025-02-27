@@ -21,7 +21,7 @@ const ProductPage = () => {
         quantity: 1,
     });
 
-    const inStock = item && item.size.length > 0;
+    const inStock = item && item?.size?.length > 0;
     const quantities = [1, 2, 3, 4, 5];
 
     const handleSelectSize = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -60,7 +60,7 @@ const ProductPage = () => {
                     <Typography gutterBottom variant="h3" component="div">{itemToAdd.price}</Typography>
                     <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: 1 }}>
                         <Typography variant="h6" component="div">select size:</Typography>
-                        {itemToAdd.size.map((size, index) => {
+                        {item.size.map((size, index) => {
                             return (
                                 <Button
                                     key={index}
