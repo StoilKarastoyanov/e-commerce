@@ -6,15 +6,15 @@ const ProductSlice = createSlice({
     name: 'product',
     initialState: initialProductState,
     reducers: {
-        setSelectedProductId: (state: ProductState, action: PayloadAction<Product>) => {
+        setSelectedProduct: (state: ProductState, action: PayloadAction<Product>) => {
             state.selectedProduct = action.payload;
         },
-        setReviwedProductIds: (state: ProductState, action: PayloadAction<Product>) => {
+        addReviwedProduct: (state: ProductState, action: PayloadAction<Product>) => {
             state.reviewedProducts.push(action.payload);
         }
     },
 });
 
-export const { setSelectedProductId, setReviwedProductIds } = ProductSlice.actions;
+export const { setSelectedProduct, addReviwedProduct } = ProductSlice.actions;
 
 export default ProductSlice.reducer;

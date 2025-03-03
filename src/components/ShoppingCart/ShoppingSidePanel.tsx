@@ -3,11 +3,11 @@ import * as React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { clearCart, removeItem } from '@/src/redux/cart/slice';
 import { selectCartItems } from '@/src/redux/cart/selectors';
+import { useHandleProductClick } from '@/src/helpers/useHandleProductClick';
 import { List, ListItemAvatar, Avatar, ListItemText, Typography, ListItemButton, Button, Box, Drawer } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
-import Image from 'next/image';
 import { CartItem } from '../types';
-import { v4 as uuidv4 } from 'uuid';
+import Image from 'next/image';
 import PanelHeader from './PanelHeader';
 
 interface SidePanelProps {
@@ -18,6 +18,7 @@ interface SidePanelProps {
 const ShoppingSidePanel: React.FC<SidePanelProps> = ({ open, close }) => {
     const dispatch = useDispatch();
     const items = useSelector(selectCartItems);
+    const handleProductClick = useHandleProductClick();
 
     const handleRemoveItem = (itemToRemove: CartItem) => {
         dispatch(removeItem(itemToRemove))
@@ -33,8 +34,8 @@ const ShoppingSidePanel: React.FC<SidePanelProps> = ({ open, close }) => {
             {items.length > 0 ? <List sx={{ display: 'flex', flexDirection: 'column', bgcolor: 'background.paper', gap: 1, overflowX: 'hidden' }}>
                 {items.map((item) => {
                     return (
-                        <Box key={uuidv4()} sx={{ display: 'flex', flexDirection: 'row' }}>
-                            <ListItemButton component="a">
+                        <Box key={`${item.id}-${item.size}`} sx={{ display: 'flex', flexDirection: 'row' }}>
+                            <ListItemButton component="a" onClick={() => handleProductClick(item)}>
                                 <ListItemAvatar>
                                     <Avatar>
                                         <Image src={item.image} alt={item.title} width={50} height={50} loading="lazy" />
@@ -47,7 +48,6 @@ const ShoppingSidePanel: React.FC<SidePanelProps> = ({ open, close }) => {
                                 <DeleteIcon />
                             </Button>
                         </Box>
-
                     )
                 })}
             </List> :

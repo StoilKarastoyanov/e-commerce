@@ -10,7 +10,7 @@ import CardActionArea from '@mui/material/CardActionArea';
 import CardActions from '@mui/material/CardActions';
 import { Product } from '../types';
 import { useRouter } from 'next/navigation';
-import { setSelectedProductId, setReviwedProductIds } from '@/src/redux/product/slice';
+import { addReviwedProduct, setSelectedProduct } from '@/src/redux/product/slice';
 import { selectRecentlyViewedItems } from '@/src/redux/product/selectors';
 
 const ProductCard = (item: Product) => {
@@ -20,10 +20,10 @@ const ProductCard = (item: Product) => {
   const { id, title, price, size, image } = item;
 
   const handleClick = () => {
-    dispatch(setSelectedProductId(item));
+    dispatch(setSelectedProduct(item));
 
     if (!reviwedItems.some((reviewedItem) => reviewedItem.id === item.id)) {
-      dispatch(setReviwedProductIds(item));
+      dispatch(addReviwedProduct(item));
     }
 
     router.push(`/product/${id}-${title.replace(/\s+/g, '-')}`);
