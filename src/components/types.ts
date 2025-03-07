@@ -16,3 +16,10 @@ export interface CartItem extends Product {
 }
 
 export type CategoryType = 'women' | 'men' | 'children';
+
+export interface SidePanelAttributes {
+    name: string;
+    title: string;
+    subtitle: string;
+    image: string;
+}

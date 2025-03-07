@@ -11,6 +11,20 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
+  {
+    rules: {
+      "max-len": [
+        "warn",
+        {
+          code: 130, // Maximum line length (100 characters)
+          tabWidth: 2,
+          ignoreUrls: true, // Allow long URLs
+          ignoreComments: false, // Enforce max line length in comments too
+          ignoreStrings: false, // Enforce max line length in strings too
+        },
+      ],
+    },
+  },
 ];
 
 export default eslintConfig;
