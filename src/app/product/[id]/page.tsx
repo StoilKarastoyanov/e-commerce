@@ -1,66 +1,30 @@
 'use client';
-import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
+import useItem from "@/src/helpers/useItem";
 import { selectSelectedItem } from "@/src/redux/product/selectors";
 import { Box, Button, MenuItem, TextField, Typography } from "@mui/material";
-import AddToCard from "@/src/components/AddToCard";
-import { CartItem } from "@/src/components/types";
+import AddToCart from "@/src/components/AddToCart";
 import styles from "./product.module.css";
+import AddToFavorites from "@/src/components/AddToFavorites";
 
 const ProductPage = () => {
     const item = useSelector(selectSelectedItem);
-
-    const [selectedSize, setSelectedSize] = useState<string | null>(null);
-    const [isItemReady, setIsItemReady] = useState<boolean>(false);
-    const [itemToAdd, setItemToAdd] = useState<CartItem>({
-        id: item?.id || "",
-        title: item?.title || "",
-        price: item?.price || "",
-        image: item?.image || "",
-        size: [],
-        quantity: 1,
-    });
-
-    const inStock = item && item?.size?.length > 0;
-    const quantities = [1, 2, 3, 4, 5];
-
-    const handleSelectSize = (event: React.MouseEvent<HTMLButtonElement>) => {
-        const target = event.target as HTMLButtonElement;
-        const newSize = target.innerText;
-
-        setSelectedSize((prevSize) => (prevSize === newSize ? null : newSize));
-
-        setItemToAdd((prevItem) => ({
-            ...prevItem,
-            size: prevItem.size.includes(newSize) ? [] : [newSize],
-        }));
-    };
-
-
-    const handleQuantityChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        const newQuantity = parseInt(event.target.value, 10);
-        setItemToAdd((prevItem) => ({
-            ...prevItem,
-            quantity: newQuantity,
-        }));
-    };
-
-    useEffect(() => {
-        setIsItemReady(itemToAdd.size.length > 0);
-    }, [itemToAdd.size]);
-
+    if (!item) throw new Error('Item is not defined');
+    const { itemToAdd, inStock, quantities, isItemReady, selectedSize, handleSelectSize, handleQuantityChange } = useItem(item);
 
     return (
         <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', flexGrow: 1, overflow: 'hidden' }}>
             <img className={styles.img} src={itemToAdd.image} alt={itemToAdd.title} loading="lazy" />
             <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'left', minWidth: '300px', padding: 4 }}>
                 <Typography
-                    gutterBottom variant="h2" component="div">{itemToAdd.title}</Typography>
+                    gutterBottom variant="h2" component="div">{itemToAdd.title}<AddToFavorites item={item} /></Typography>
+
+
                 {inStock ? <>
                     <Typography gutterBottom variant="h3" component="div">{itemToAdd.price}</Typography>
                     <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: 1 }}>
                         <Typography variant="h6" component="div">select size:</Typography>
-                        {item.size.map((size, index) => {
+                        {item?.size.map((size, index) => {
                             return (
                                 <Button
                                     key={index}
@@ -96,9 +60,8 @@ const ProductPage = () => {
                             ))}
                         </TextField>
                     </Box>
-                    <AddToCard item={itemToAdd} enabled={isItemReady} />
+                    <AddToCart item={itemToAdd} enabled={isItemReady} parent="header" />
                 </> : <Typography gutterBottom variant="h3" component="div" color="error">out of stock</Typography>}
-
             </Box>
         </Box>
     );

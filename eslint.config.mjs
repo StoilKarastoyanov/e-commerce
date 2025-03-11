@@ -23,6 +23,7 @@ const eslintConfig = [
           ignoreStrings: false, // Enforce max line length in strings too
         },
       ],
+      "@next/next/no-img-element": "off",
     },
   },
 ];

@@ -1,10 +1,10 @@
 'use client';
 import ProductCard from "@/src/components/ProductCard";
-import { Product } from "@/src/components/types";
+import { CartItem } from "@/src/components/types";
 import styles from "./articles.module.css";
 
 interface ArticlesProps {
-    data: Product[];
+    data: CartItem[];
 }
 
 const Articles = ({ data }: ArticlesProps) => {
