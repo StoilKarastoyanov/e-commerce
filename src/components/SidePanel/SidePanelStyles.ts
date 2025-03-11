@@ -1,4 +1,4 @@
-export const DrawerWrapper = { width: 400 };
+export const DrawerWrapper = { display: 'flex', flexDirection: 'column', width: 400, };
 
 export const DrawerListStyles = {
     display: 'flex',
@@ -27,4 +27,12 @@ export const EmptyListTextWrapper = {
     alignItems: 'center',
     gap: 2,
     padding: 4
+};
+
+export const TitlePriceStyles = { maxWidth: 150 };
+
+export const SizeQuantityStyles = {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-end'
 };

@@ -15,10 +15,13 @@ const FavoritesSlice = createSlice({
             );
 
             state.favoriteItems.splice(existingItemIndex, 1);
+        },
+        clearFavorites: (state: FavoritesState) => {
+            state.favoriteItems = [];
         }
     }
 });
 
-export const { addFavoriteItem, removeFavoriteItem } = FavoritesSlice.actions;
+export const { addFavoriteItem, removeFavoriteItem, clearFavorites } = FavoritesSlice.actions;
 
 export default FavoritesSlice.reducer;
